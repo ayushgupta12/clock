@@ -134,7 +134,7 @@ async function startTimer(){
             timer = timer.replaceAt(6, "5");
             timer = timer.replaceAt(7, "9");
             document.querySelector('#timer').innerHTML = timer;
-            await sleep(985);
+            await sleep(980);
         }
 
         else if (timer[7] == 0){
@@ -142,12 +142,12 @@ async function startTimer(){
             timer = timer.replaceAt(6, value.toString());
             timer = timer.replaceAt(7, "9");
             document.querySelector('#timer').innerHTML = timer;
-            await sleep(990);
+            await sleep(980);
         }
         var value = parseInt(timer[7]) - 1;
         timer = timer.replaceAt(7, value.toString());
         document.querySelector('#timer').innerHTML = timer;
-        setTimeout(startTimer, 990);
+        setTimeout(startTimer, 980);
     }
     else{
         timerOn = true;
